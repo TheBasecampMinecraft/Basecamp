@@ -1,0 +1,10 @@
+services:
+  - type: worker
+    name: basecamp
+    env: docker
+    plan: standard
+    dockerfilePath: ./Dockerfile
+    autoDeploy: true
+    envVars:
+      - key: PORT
+        value: 25565
